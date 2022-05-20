@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "compile": "babel src -d lib",
+    "prepublish": "npm run compile",
+    "test": "mocha"
+  },
+  "type":"module",
+  "directories": {
+    "lib": "./src",
+    "test": "./test"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.17.7",
+    "mocha": "^9.2.2"
+  }
+}
